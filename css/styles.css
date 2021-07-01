@@ -3,7 +3,199 @@
     --secundario: #c7c57d;
     --gris: #f5f5f5;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
-    color:#303030;
+    color: #303030;
+}
+
+.bg-primary {
+    background-color: var(--primario)!important;
+}
+
+.bg-secondary {
+    background-color: var(--secundario)!important;
+}
+
+.btn-primary {
+    background-color: var(--primario);
+    border-color: var(--primario);
+}
+
+.btn-primary:hover {
+    background-color: rgb(202, 63, 66);
+    border-color: rgb(202, 63, 66);
+}
+
+p {
+    font-weight: 100;
+    line-height: 2.8rem;
+    font-size: 1rem;
+}
+
+
+/* Links para Header y Footer */
+
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+}
+
+.nav-link:hover {
+    color: var(--primario);
+}
+
+
+/* Sección Imagenes y Frases */
+
+.fondoVino {
+    background-image: url(../img/principal1.jpg);
+}
+
+.fondoComida {
+    background-image: url(../img/principal2.jpg);
+}
+
+.imagen {
+    background-size: cover;
+    background-position: top center;
+}
+
+.imagenSuperior>div,
+.imagenInferior>div {
+    height: 30rem;
+}
+
+@media (min-width: 768px) {
+    .imagenSuperior>div,
+    .imagenInferior>div {
+        height: 45rem;
+    }
+}
+
+.imagenInferior .fondoComida {
+    order: 1;
+}
+
+@media (min-width: 768px) {
+    .imagenInferior .fondoComida {
+        order: unset;
+    }
+}
+
+.imagenSuperior .contenido {
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.imagenInferior .contenido {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.contenido p {
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 2rem;
+}
+
+
+/* Nosotros */
+
+.separador::after {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-image: url(../img/separador.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 20px auto 0 auto;
+}
+
+.nosotros .informacion h3 {
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: var(--primario);
+}
+
+
+/* Próximas clases */
+
+.card {
+    margin-bottom: 2rem;
+}
+
+.badge-secondary {
+    color: #000000;
+    background-color: var(--secundario);
+}
+
+.clases {
+    background-color: #f5f5f5;
+}
+
+.card-meta span {
+    font-weight: 700;
+}
+
+.card-subtitle {
+    color: var(--primario);
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.card-body p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.card-body a {
+    color: var(--primario);
+    font-weight: 700;
+}
+
+.clases .card-body {
+    text-align: center;
+}
+
+.clases .card-body p {
+    text-align: justify;
+}
+
+
+/* Información Licenciatura */
+
+.informacionLicenciatura {
+    background-image: url(../img//chef_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.estudiaLicenciatura {
+    height: 38rem;
+}
+
+.informacion .contenido h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.informacion .contenido p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+
+/* Footer */
+
+.footer {
+    border-bottom: 10px solid #f46669;
+}
+
+.copyright {
+    font-weight: 700;
+    font-size: 1rem;
 }

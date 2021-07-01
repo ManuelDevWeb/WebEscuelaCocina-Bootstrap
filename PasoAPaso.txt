@@ -13,12 +13,29 @@
 
 5. Crear el Header
 
-6. 
+6. Crear los Textos de la parte superior
 
+7. Agregar las imagenes principales y darles estilo
+
+8. Crear la seccion sobre nosotros
+
+9. Dar estilos a la sección nosotros
+
+10. Crear la sección de proximas clases
+
+11. Estilos a la sección de clases
+
+12. Crear la sección de información
+
+13. Estilos a la sección de información
+
+14. Crear el footer
+
+15. Darle estilos al footer
 
 ****
 21. Subir a repositorio: git init
-                         git remote add origin https://github.com/Manuelowsky/WebParaInmobiliaria-Bootstrap-
+                         git remote add origin https://github.com/Manuelowsky/WebEscuelaCocina-Bootstrap
                          git status 
                          git add .
                          git commit -m "Se agregaron las rutas y archivos de configuracion"
